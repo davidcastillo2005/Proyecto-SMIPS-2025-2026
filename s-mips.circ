@@ -2634,6 +2634,36 @@
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <appear>
+      <rect fill="none" height="230" stroke="#000000" stroke-width="2" width="109" x="51" y="50"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="104">reset</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="71" y="125">write</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="70" y="144">push</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="65" y="64">IN</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="67" y="164">CLK</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="83" y="182">memR/W</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="68" y="202">pop</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="74" y="233">select</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="69" y="254">selA</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="69" y="274">selB</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="134" y="104">OUT_A</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="134" y="135">OUT_B</text>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="143" y="164">R31</text>
+      <circ-port height="8" pin="350,30" width="8" x="46" y="96"/>
+      <circ-port height="8" pin="500,30" width="8" x="46" y="116"/>
+      <circ-port height="8" pin="630,30" width="8" x="46" y="136"/>
+      <circ-port height="8" pin="130,60" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="350,70" width="8" x="46" y="156"/>
+      <circ-port height="8" pin="500,70" width="8" x="46" y="176"/>
+      <circ-port height="8" pin="630,70" width="8" x="46" y="196"/>
+      <circ-port height="8" pin="350,170" width="8" x="46" y="226"/>
+      <circ-port height="8" pin="550,170" width="8" x="46" y="246"/>
+      <circ-port height="8" pin="750,170" width="8" x="46" y="266"/>
+      <circ-port height="10" pin="980,50" width="10" x="155" y="95"/>
+      <circ-port height="10" pin="1150,50" width="10" x="155" y="125"/>
+      <circ-port height="10" pin="1370,50" width="10" x="155" y="155"/>
+      <circ-anchor facing="east" height="6" width="6" x="47" y="57"/>
+    </appear>
     <wire from="(490,1430)" to="(610,1430)"/>
     <wire from="(490,1270)" to="(610,1270)"/>
     <wire from="(1460,340)" to="(1460,360)"/>
@@ -8370,19 +8400,24 @@
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(130,190)" to="(290,190)"/>
-    <wire from="(280,170)" to="(290,170)"/>
-    <wire from="(280,100)" to="(280,170)"/>
-    <wire from="(240,110)" to="(240,180)"/>
-    <wire from="(240,180)" to="(290,180)"/>
-    <comp loc="(290,160)" name="Instruction Decoder">
-      <a name="label" val="Instruction Decoder"/>
-    </comp>
-    <comp lib="0" loc="(130,190)" name="Pin">
+    <wire from="(630,210)" to="(680,210)"/>
+    <wire from="(150,160)" to="(190,160)"/>
+    <wire from="(670,200)" to="(680,200)"/>
+    <wire from="(670,130)" to="(670,200)"/>
+    <wire from="(630,140)" to="(630,210)"/>
+    <comp lib="0" loc="(150,160)" name="Pin">
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Instruction"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(670,130)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="5"/>
+      <a name="label" val="RS"/>
+    </comp>
+    <comp loc="(190,160)" name="Instruction Decoder">
+      <a name="label" val="Instruction Decoder"/>
     </comp>
     <comp lib="0" loc="(550,410)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -8394,12 +8429,7 @@
       <a name="width" val="5"/>
       <a name="label" val="RS"/>
     </comp>
-    <comp lib="0" loc="(280,100)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="width" val="5"/>
-      <a name="label" val="RS"/>
-    </comp>
-    <comp lib="0" loc="(240,110)" name="Tunnel">
+    <comp lib="0" loc="(630,140)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="5"/>
       <a name="label" val="RT"/>

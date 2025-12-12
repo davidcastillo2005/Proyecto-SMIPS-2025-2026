@@ -10176,6 +10176,7 @@
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
       <rect fill="none" height="60" stroke="#000000" stroke-width="2" width="30" x="50" y="55"/>
+      <text font-family="SansSerif" font-size="12" text-anchor="middle" x="63" y="48">Write RAM</text>
       <circ-port height="8" pin="140,350" width="8" x="46" y="76"/>
       <circ-port height="8" pin="150,490" width="8" x="46" y="86"/>
       <circ-port height="10" pin="290,120" width="10" x="75" y="55"/>
